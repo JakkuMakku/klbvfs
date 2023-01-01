@@ -346,11 +346,10 @@ if __name__ == "__main__":
 
   desc = 'dump encrypted assets from pkg files'
   dump = sub.add_parser('dump', aliases=['d'], help=desc)
-  types = ['adv_graphic', 'adv_script', 'adv_sound', 'background',
-           'gacha_performance', 'live2d_sd_model', 'live_prop_skeleton',
-           'live_timeline', 'member_facial', 'member_facial_animation',
-           'member_model', 'member_sd_model', 'navi_motion', 'navi_timeline',
-           'shader', 'skill_effect', 'skill_timeline', 'skill_wipe', 'stage',
+  types = ['adv_script', 'background', 'gacha_performance', 'live2d_sd_model',
+           'live_prop_skeleton', 'live_timeline', 'member_model',
+           'member_sd_model', 'navi_motion', 'navi_timeline', 'shader',
+           'skill_effect', 'skill_timeline', 'skill_wipe', 'stage',
            'stage_effect', 'texture']
   desc = 'types of assets. supported values: ' + ', '.join(types)
   dump.add_argument('--types', dest='types', nargs='*', metavar='',
